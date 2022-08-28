@@ -23,7 +23,8 @@ int binary_search(int a[], int n, int x)
     {
       right = mid - 1;
     }
-  }return -1;
+  }
+  return -1;
 }
 
 int main()
