@@ -11,11 +11,9 @@ void test(float  a, float  b, float  c)
     }else{
         cout << "NO\n";
     }
-    
 }
 
 int main()
-
 {
     int t;
     cin >> t;
