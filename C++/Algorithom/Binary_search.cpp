@@ -31,7 +31,7 @@ int main()
 {
   int myNumbers[5] = {10, 20, 30, 40, 50};
   int n = sizeof(myNumbers) / sizeof(int);
- cout << binary_search(myNumbers, n, 50);
+ cout << binary_search(myNumbers, n, 20);
 
   return 0;
 }

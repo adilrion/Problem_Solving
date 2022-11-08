@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <string>
 using namespace std;
 
 void linear_search(int a[], int n, int x)
@@ -9,18 +8,17 @@ void linear_search(int a[], int n, int x)
   {
     if (a[i] == x)
     {
-      cout << i << " : "<< a[i];
+      cout << a[i] << "is available"
+           << " : " << i << "st index";
     }
   }
   i = -1;
-  cout << "not found";
 }
 
-
-int main(){
-  int myNumbers[6] = {1,4, 8, 10, 20, 50};
+int main()
+{
+  int myNumbers[6] = {1, 4, 8, 10, 20, 50};
   int arrayLength = sizeof(myNumbers) / sizeof(int);
-  
-linear_search(myNumbers, arrayLength, 23);
+  linear_search(myNumbers, arrayLength, 4);
   return 0;
 }
