@@ -7,6 +7,8 @@
     %c          = character
     %s          = String type Text
     %lu         = long Unsigned Integer
+    %p          = to print pointer value we use in this specifiers
+    
 */
 
 int main(){
