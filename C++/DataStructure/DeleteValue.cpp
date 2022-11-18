@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int arr[10], i, n, num, p = 0;
+    cout << "Enter size of an array: ";
+    cin >> n;
+    cout << "Enter array elements: ";
+    for (i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    cout << "Enter element for delete: ";
+    cin >> num;
+    for (i = 0; i < n; i++)
+    {
+        if (arr[i] == num)
+        {
+            arr[i] = arr[i + 1];
+            p = 1;
+        }
+        else if (p > 0)
+        {
+            arr[i] = arr[i + 1];
+        }
+    }
+    cout << "New array list is: ";
+    for (i = 0; i < n - p; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    return 0;
+}
