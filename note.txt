@@ -1,0 +1,13 @@
+post formate
+--------------
+
+🔥 #Leetcode daily [March 12, 2024] 
+🧩 Problem: [278. First Bad Version]
+
+#Leetcode #leetcodedaily
+
+
+Comment formate
+---------------
+// problem: 278. First Bad Version
+// Programming Language: Javascript
