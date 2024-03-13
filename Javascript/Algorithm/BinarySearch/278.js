@@ -1,6 +1,5 @@
-// problem: 278. First Bad Version
+// Problem: 278. First Bad Version
 // Programming Language: Javascript
-
 
 var solution = function (isBadVersion) {
     /**
@@ -19,9 +18,7 @@ var solution = function (isBadVersion) {
             } else {
                 right = mid - 1;
             }
-
         }
-                    return left;
-
+        return left;
     };
 };

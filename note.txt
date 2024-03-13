@@ -9,5 +9,5 @@ post formate
 
 Comment formate
 ---------------
-// problem: 278. First Bad Version
+// Problem: 
 // Programming Language: Javascript
