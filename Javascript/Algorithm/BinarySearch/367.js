@@ -7,9 +7,7 @@ var isPerfectSquare = function (num) {
 
     while (start <= end) {
         let mid = Math.floor(start + (end - start) / 2);
-        console.log("🚀 ~ isPerfectSquare ~ mid:", mid)
         let Square = mid * mid;
-        console.log("-", Square)
         if (Square == num) {
             return true;
         } else if (Square > num) {
