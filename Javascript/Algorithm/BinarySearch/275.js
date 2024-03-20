@@ -1,5 +1,4 @@
 // 275. H-Index II
-
 var hIndex = function (citations) {
     citations.sort((a, b) => b - a);
     let hIndex = 0;
