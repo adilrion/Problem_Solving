@@ -9,7 +9,7 @@ var reverseVowels = function (s) {
   const vowelList = sArray.filter((char) => vowels.includes(char));
 
     // Replace vowels in the string with reversed vowels
-    for (let i = 0; i < sArray.length; i++) {
+  for (let i = 0; i < sArray.length; i++) {
       if (vowels.includes(sArray[i])) {
      
             sArray[i] = vowelList.pop(); // Pop reversed vowels one by one
@@ -24,6 +24,8 @@ var reverseVowels = function (s) {
 
 
 const s = 'Adil'
+
+
 
 console.log(reverseVowels(s));
 
