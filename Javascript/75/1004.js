@@ -14,7 +14,6 @@ var longestOnes = function (nums, k) {
 
       // Shrink the window if the number of 0's exceeds k
     while (zeroCount > k) {
-      console.log(zeroCount);
           if (nums[left] === 0) {
               zeroCount--;
           }
