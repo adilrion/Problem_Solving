@@ -1,13 +1,18 @@
 var isSubsequence = function (s, t) {
-    let i = 0; // Pointer for string s
-    let j = 0; // Pointer for string t
-
-    while (i < s.length && j < t.length) {
-        if (s[i] === t[j]) {
-            i++; // Move s pointer if characters match
-        }
-        j++; // Always move t pointer
+    if (s.length < 0 && t.length < 0) {
+        return false
     }
+    
+    
+     let i = 0,
+         j = 0;
 
-    return i === s.length; // If we matched all characters of s
+     while (i < s.length && j < t.length) {
+         if (s[i] === t[j]) {
+             i++; 
+         }
+         j++; 
+     }
+
+     return i === s.length;
 };
