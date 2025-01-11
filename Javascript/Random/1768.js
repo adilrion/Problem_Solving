@@ -1,30 +1,25 @@
-var mergeAlternately = function (word1, word2) {
-  let margeString = '';
-  let rest = 0;
-  
+// 1768. Merge Strings Alternately
 
-  for (let index = 0; index < word1.length; index++) {
-    if (word1[index]) {
-      margeString += word1[index];
-      }
-    if (word2[index]) {
-      margeString += word2[index]
+function mergeAlternately(word1, word2) {
+    let mergedString = "";
+    let maxLength = Math.max(word1.length, word2.length);
+    for (let i = 0; i < maxLength; i++) {
+        if (i < word1.length) {
+            mergedString += word1[i];
+        }
+        if (i < word2.length) {
+            mergedString += word2[i];
+        }
     }
-
-    rest++
-  }
-
-  if (rest < word2.length) {
-    const restOFWord = word2.slice(rest);
-    margeString += restOFWord
-
-  }
+    return mergedString;
+}
 
 
-  return margeString;
-};
+// Example 1
+console.log(mergeAlternately("abc", "pqr"));
 
+// Example 2
+console.log(mergeAlternately("ab", "pqrs"));
 
-const word1 = "abhsfkhsdfk";
-const word2 = "pqrs";
-console.log(mergeAlternately(word1, word2));
+// Example 3
+console.log(mergeAlternately("abcd", "pq"));
