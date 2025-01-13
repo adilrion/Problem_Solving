@@ -11,7 +11,8 @@ var convert = function (s, numRows) {
     let goingDown = false;
 
     // Iterate over each character in the string
-    for (const char of s) {
+  for (const char of s) {
+      console.log(currentRow);
         rows[currentRow] += char; // Append the character to the current row
         // Change direction at the top or bottom row
         if (currentRow === 0 || currentRow === numRows - 1) {
