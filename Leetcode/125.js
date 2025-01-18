@@ -11,7 +11,7 @@ var isPalindrome = function (s) {
 };
 
 let s = "ab_a",
-    b = "race a! car";
+    b = "race a! car";                              
 
 console.log(isPalindrome(s));
 console.log(isPalindrome(b));
