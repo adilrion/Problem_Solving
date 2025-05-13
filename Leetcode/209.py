@@ -11,9 +11,11 @@ class Solution:
                 sum -= numbers[left]
                 left += 1
 
-        return 0 if minL == 0 else minL
+        return 0 if minL == float("inf") else minL
 
 
 target = 7
 nums = [2, 3, 1, 2, 4, 3]
 print(Solution().minSubArray(target, nums))
+
+
