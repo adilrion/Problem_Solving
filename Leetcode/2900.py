@@ -22,3 +22,4 @@ words2 = ["a", "b", "c", "d"]
 groups2 = [1, 0, 1, 1]
 print(solution.getLongestSubsequence(words2, groups2))
 
+
